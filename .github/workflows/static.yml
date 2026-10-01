@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>October 16? ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
+            color: #4a3036;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .top-heart {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #d85b79;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            color: #b33e60;
+            font-size: 27px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* PHOTO */
+
+        .photo {
+            width: 280px;
+            max-width: 90%;
+            border-radius: 18px;
+            border: 6px solid #fff0f5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            margin: 15px auto 25px;
+            display: block;
+        }
+
+        .question {
+            font-size: 25px;
+            font-weight: bold;
+            color: #d85b79;
+            margin-bottom: 25px;
+        }
+
+        /* BUTTON AREA */
+
+        .buttons {
+            height: 90px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            border: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #yesButton {
+            background: #e85f87;
+            color: white;
+            transition: 0.2s;
+        }
+
+        #yesButton:hover {
+            background: #d94c76;
+            transform: scale(1.05);
+        }
+
+        #noButton {
+            background: #ddd;
+            color: #555;
+            position: relative;
+            transition: left 0.2s, top 0.2s;
+        }
+
+        /* SUCCESS MESSAGE */
+
+        #success {
+            display: none;
+            margin-top: 25px;
+            background: #fff0f5;
+            border-radius: 18px;
+            padding: 25px;
+            animation: appear 0.5s ease;
+        }
+
+        #success h2 {
+            color: #d85b79;
+            margin-bottom: 15px;
+        }
+
+        #success p {
+            line-height: 1.7;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* SMALL HEARTS */
+
+        .heart {
+            position: fixed;
+            bottom: -30px;
+            font-size: 22px;
+            animation: float 6s linear infinite;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(3) {
+            left: 55%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(4) {
+            left: 80%;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 30px 18px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .date {
+                font-size: 23px;
+            }
+
+            .message {
+                font-size: 16px;
+            }
+
+            .question {
+                font-size: 21px;
+            }
+
+            .photo {
+                width: 250px;
+            }
+
+            .buttons {
+                height: 100px;
+            }
+
+            button {
+                padding: 12px 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+
+    <div class="heart">❤️</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+    <div class="heart">💖</div>
+
+
+    <!-- MAIN CARD -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="top-heart">
+                💗
+            </div>
+
+            <h1>
+                Hey Aly 
+            </h1>
+
+            <div class="date">
+                October 16
+            </div>
+
+            <p class="message">
+                Can we make October 16 a special day for us? I would love to spend time with you and make it memorable. 
+                
+            </p>
+
+
+            <!-- YOUR PHOTO -->
+
+            <img
+                src="2222.jpeg.jpg"
+                alt="Our Photo"
+                class="photo"
+            >
+
+
+            <div class="question">
+                Will you go on a date with me? 💕
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <button
+                    id="yesButton"
+                    onclick="sayYes()"
+                >
+                    Yes 
+                </button>
+
+                <button
+                    id="noButton"
+                    onmouseover="moveNo()"
+                    onclick="moveNo()"
+                >
+                    No 
+                </button>
+
+            </div>
+
+
+            <!-- SUCCESS -->
+
+            <div id="success">
+
+                <h2>
+                    YEY!
+                 
+                </h2>
+
+                <p>
+                    It's a date! 
+                </p>
+
+                <p>
+                    October 16 is officially our date.
+                    I can't wait to spend time with you.
+                </p>
+
+                <br>
+
+                <p>
+                    I'll make sure we have a nice time together. 
+                </p>
+
+                <br>
+
+                <strong>
+                    I love you, bujayjay! 
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // YES BUTTON
+
+        function sayYes() {
+
+            document.getElementById("success").style.display = "block";
+
+            document.getElementById("yesButton").innerHTML =
+                "YES! ❤️";
+
+            document.getElementById("noButton").style.display =
+                "none";
+
+        }
+
+
+        // MOVE NO BUTTON
+
+        function moveNo() {
+
+            const button = document.getElementById("noButton");
+
+            const maxX = window.innerWidth - button.offsetWidth - 30;
+            const maxY = window.innerHeight - button.offsetHeight - 30;
+
+            const randomX = Math.max(
+                15,
+                Math.random() * maxX
+            );
+
+            const randomY = Math.max(
+                15,
+                Math.random() * maxY
+            );
+
+            button.style.position = "fixed";
+            button.style.left = randomX + "px";
+            button.style.top = randomY + "px";
+
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
